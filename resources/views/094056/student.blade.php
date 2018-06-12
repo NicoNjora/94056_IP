@@ -5,7 +5,7 @@
 </head>
 <body>
 
-	<form method="post" action="/students/save" style="text-align: center;">
+	<form method="post" action="/students/save" enctype="application/x-www-form-urlencoded" style="text-align: center;">
             {{csrf_field()}}
             <!-- <input type="hidden" name="id"> -->           
 
