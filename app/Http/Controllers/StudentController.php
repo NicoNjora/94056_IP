@@ -14,7 +14,7 @@ class StudentController extends Controller
 	{
     	return view('/094056/student');
 	}
-	public function store()
+	public function store(Request $request)
 	{	
 		
 	    $student = new Student();
