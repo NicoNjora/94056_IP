@@ -1,4 +1,6 @@
 <?php
+use App\Student;
+use App\Fees;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,5 +14,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('/094056/home');
 });
+
+Route::get('/students/new','StudentController@create');
+Route::get('/fees/pay','FeesController@pay');
+
+Route::post('/students/save','StudentController@store');
+Route::post('/fees/add','FeesController@add');
+
+
