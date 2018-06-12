@@ -23,4 +23,4 @@ Route::get('/fees/pay','FeesController@pay');
 Route::post('/students/save','StudentController@store');
 Route::post('/fees/add','FeesController@add');
 
-
+?>
