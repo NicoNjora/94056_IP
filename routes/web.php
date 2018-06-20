@@ -19,6 +19,7 @@ Route::get('/', function () {
 
 Route::get('/students/new','StudentController@create');
 Route::get('/fees/pay','FeesController@pay');
+Route::get('/students','StudentController@view');
 
 Route::post('/students/save','StudentController@store');
 Route::post('/fees/add','FeesController@add');

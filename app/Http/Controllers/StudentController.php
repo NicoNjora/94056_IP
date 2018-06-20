@@ -14,6 +14,12 @@ class StudentController extends Controller
 	{
     	return view('/094056/student');
 	}
+	public function view()
+	{
+    	$students=Student::all();
+ 
+    	return view('/094056/view', ['students' => $students]);
+	}
 	public function store(Request $request)
 	{	
 		
